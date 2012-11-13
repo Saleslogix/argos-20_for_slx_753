@@ -58,9 +58,8 @@
 			{ name: 'dijit', location: '../../argos-sdk/libraries/dojo/dijit' },
 			{ name: 'Sage/Platform/Mobile', location: '../../argos-sdk/src' },
 			{ name: 'Mobile/SalesLogix', location: 'src' },
-			{ name: 'Mobile/Sample', location: '../argos-20_for_slx_753/src' },
-			{ name: 'configuration/sample', location: '../argos-sample/configuration' },
-			{ name: 'localization/sample', location: '../argos-sample/localization' }
+			{ name: 'Mobile/Slx20for753', location: '../argos-20_for_slx_753/src' },
+			{ name: 'configuration/slx20for753', location: '../argos-20_for_slx_753/configuration' }
 			]
      });
     </script>
@@ -69,13 +68,12 @@
     (function() {
         var application = 'Mobile/SalesLogix/Application',
             configuration = [
-                'configuration/development'
+                'configuration/slx20for753/development'
             ];
         require([application].concat(configuration), function(application, configuration) {
             var localization = [
                 'localization/en',
-                'localization/saleslogix/en',
-                'localization/sample/en'
+                'localization/saleslogix/en'
             ];
             require(localization.concat('dojo/domReady!'), function() {
                 var instance = new application(configuration);

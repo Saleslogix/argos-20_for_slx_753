@@ -1,29 +1,13 @@
 {
-  "projectName": "SalesLogix Mobile Sample Module",
+  "projectName": "SalesLogix Mobile 2.0 for 7.5.3 Module",
   "licenseText": "",
   "deployDir": "deploy/",
   "pkgs": [
     {
-      "name": "SalesLogix Mobile Sample Module",
-      "file": "content/javascript/argos-sample.js",
+      "name": "SalesLogix Mobile 2.0 for 7.5.3 Module",
+      "file": "content/javascript/argos-slx20for753.js",
       "isDebug": true,
       "fileIncludes": [
-        {
-          "text": "GroupsList.js",
-          "path": "../src/Views"
-        },
-        {
-          "text": "GroupList.js",
-          "path": "../src/Views/Account"
-        },
-        {
-          "text": "GroupList.js",
-          "path": "../src/Views/Contact"
-        },
-        {
-          "text": "GoogleMap.js",
-          "path": "../src/Views"
-        },
         {
           "text": "ApplicationModule.js",
           "path": "../src"
@@ -33,19 +17,9 @@
   ],
   "resources": [
     {
-      "src": "../content",
-      "dest": "content",
-      "filters": ".*(\\.css|\\.jpg|\\.png|\\.gif)"
-    },
-    {
       "src": "../configuration",
-      "dest": "configuration/sample",
+      "dest": "configuration/slx20for753",
       "filters": ".*\\.js"
     },
-    {
-      "src": "../localization",
-      "dest": "localization/sample",
-      "filters": ".*\\.js"
-    }
   ]
 }

@@ -12,11 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-define('Mobile/Sample/ApplicationModule', [
+define('Mobile/Slx20for753/ApplicationModule', [
     'Sage/Platform/Mobile/ApplicationModule'
-], function() {
+], function(ApplicationModule) {
 
-    return dojo.declare('Mobile.SalesLogix.ApplicationModule', Sage.Platform.Mobile.ApplicationModule, {
+    return dojo.declare('Mobile.Slx20for753.ApplicationModule', ApplicationModule, {
         loadCustomizations: function() {
             dojo.extend(Mobile.SalesLogix.Application, {
                 authenticateUser: function(credentials, options) {
