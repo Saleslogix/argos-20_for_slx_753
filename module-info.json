@@ -1,0 +1,9 @@
+{
+    "name": "v2-for-753",
+    "displayName": "v2.0 for SLX7.5.3 Compatibility",
+    "description": "A compatibility module for the Sage SalesLogix Mobile v2.0 client that enables User login as 7.5.3 does not support getCurrentUser service.",
+    "majorVersion": 1,
+    "minorVersion": 1,
+    "buildNumber": 0,
+    "targetProduct": "saleslogix"
+}

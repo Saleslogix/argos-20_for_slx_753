@@ -49,21 +49,19 @@ This module demonstrates how to make the Mobile Saleslogix v2.0 application comp
 			{ name: 'dijit', location: '../../argos-sdk/libraries/dojo/dijit' },
 			{ name: 'Sage/Platform/Mobile', location: '../../argos-sdk/src' },
 			{ name: 'Mobile/SalesLogix', location: 'src' },
-			{ name: 'Mobile/Sample', location: '../argos-20_for_slx_753/src' },
-			{ name: 'configuration/sample', location: '../argos-sample/configuration' },
-			{ name: 'localization/sample', location: '../argos-sample/localization' }
+			{ name: 'Mobile/Slx20for753', location: '../argos-20_for_slx_753/src' },
+			{ name: 'configuration/slx20for753', location: '../argos-20_for_slx_753/configuration' }
 			]
      });
 
     var application = 'Mobile/SalesLogix/Application',
         configuration = [
-            'configuration/development' //<-- development config file (no extension)
+            'configuration/slx20for753/development' //<-- development config file (no extension)
         ];
     require([application].concat(configuration), function(application, configuration) {
         var localization = [
             'localization/en',
-            'localization/saleslogix/en',
-            'localization/sample/en' // <-- locale file (no extension)
+            'localization/saleslogix/en'
         ];
 ```
 
@@ -103,12 +101,11 @@ You may place information about your customization module in the `module-info.js
 
 2\. Then open the `module-fragment.html` file. This file will be placed into all the `index` files (either manually via copy pasting the lines or automatically through AA).
 
-3\. Edit it to point to your minified script and stylesheet (following the `deploy` folder layout):
+3\. Edit it to point to your minified script (following the `deploy` folder layout):
 
 ```
-    <!-- Sample -->
-    <link type="text/css" rel="stylesheet" href="content/css/sample.css" />
-    <script type="text/javascript" src="content/javascript/argos-sample.js"></script>
+    <!-- 2.0 for 7.5.3 compatibility -->
+    <script type="text/javascript" src="content/javascript/argos-slx20for753.js"></script>
 ```    
 
 4\. At this point this guide will continue assuming you are manually deploying, this section will change when AA supports Mobile Deployment.
@@ -123,11 +120,10 @@ You may place information about your customization module in the `module-info.js
 To:
 
     <!-- Modules -->
-    <!-- Sample -->
-    <link type="text/css" rel="stylesheet" href="content/css/sample.css" />
-    <script type="text/javascript" src="content/javascript/argos-sample.js"></script>
+    <!-- 2.0 for 7.5.3 compatibility -->
+    <script type="text/javascript" src="content/javascript/argos-slx20for753.js"></script>
 
-6\. Lastly we need to add the modules configuration and the localization by editing the following lines:
+6\. Lastly we need to add the modules configuration and any localization by editing the following lines:
 
 ```
     (function() {
@@ -149,13 +145,12 @@ To:
         var application = 'Mobile/SalesLogix/Application',
             configuration = [
                 'configuration/production',
-                'configuration/20_for_slx_753/production'
+                'configuration/slx20for753/production'
            ];
         require([application].concat(configuration), function(application, configuration) {
             var localization = [
                 'localization/en',
-                'localization/saleslogix/en',
-                'localization/20_for_slx_753/en'
+                'localization/saleslogix/en'
             ];
 ```
 
