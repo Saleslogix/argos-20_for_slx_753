@@ -1,5 +1,5 @@
 {
-	"projectName": "SalesLogix Mobile Sample Module",
+	"projectName": "SalesLogix Mobile 2.0 for 7.5.3 Module",
 	"licenseText": "",
 	"deployDir": "deploy/",
 	"pkgs": [],
@@ -9,11 +9,7 @@
 		"filters": ".*(\\.css|\\.jpg|\\.png|\\.gif)"
 	},{
 		"src": "../configuration",
-		"dest": "configuration/sample",
-		"filters": ".*\\.js"
-	},{
-		"src": "../localization",
-		"dest": "localization/sample",
+		"dest": "configuration/slx20for753",
 		"filters": ".*\\.js"
 	}]
 }
